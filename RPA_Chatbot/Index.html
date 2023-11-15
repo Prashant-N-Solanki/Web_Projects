@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>THE RPA CHAT-BOT</title>
+    
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script type="module">
+      import { reply, set } from "./Script.js";
+      window.reply = reply;
+      window.set   = set;
+    </script>
+
+    <link rel="stylesheet" type="text/css" href="Style.css"/>
+    <link rel="icon" type="image/jpg" href="Icon.jpg">
+
+  </head>
+  <body onload="set()">
+
+    <div id="hea">THE RPA CHAT-BOT</div>
+    <div id="cha"><table id="tab"><tr><td>YOU</td><td>BOT</td></tr></table></div>
+
+    <div id="inp">
+      <input  id="usr" type="text" placeholder="Ask me something from below......">
+      <button id="btn" onclick="reply(), set()">ENTER</button>
+    </div>
+
+    <div id="que">
+      <a id="quh">QUESTIONS YOU CAN ASK</a>
+      <table id="tav"></table>
+    </div>
+
+  </body>
+</html>
+
